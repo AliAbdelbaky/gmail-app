@@ -1,13 +1,9 @@
 import { createI18n } from "vue-i18n";
-import enUS from "@/locales/en.json";
-import arEg from "@/locales/ar.json";
+import en from "@/locales/en.json";
+import ar from "@/locales/ar.json";
 const messages = {
-  en: {
-    ...enUS,
-  },
-  ar: {
-    ...arEg,
-  },
+  en,
+  ar,
 };
 
 const options: object = {
@@ -20,6 +16,5 @@ const options: object = {
   messages,
 };
 const i18n = createI18n(options);
-
 
 export default i18n;
