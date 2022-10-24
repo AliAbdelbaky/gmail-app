@@ -1,15 +1,14 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-</script>
-
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-  <router-view></router-view>
+  <MainWrapper />
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import MainWrapper from './components/MainWrapper.vue'
+export default defineComponent({
+  name: "App",
+  components: {
+    MainWrapper
+  },
+});
+</script>

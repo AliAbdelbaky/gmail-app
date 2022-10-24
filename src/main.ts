@@ -1,14 +1,10 @@
 import { createApp } from "vue";
-import { createPinia } from "pinia";
-
 import App from "./App.vue";
 import router from "./router";
+//-- vuetify
+import vuetifyApp from "./plugins/vuetify";
+// import { loadFonts } from "./plugins/webfontloader";
+//-- /vuetify
+import i18n from "./plugins/i18n";
 
-import "./assets/main.css";
-
-const app = createApp(App);
-
-app.use(createPinia());
-app.use(router);
-
-app.mount("#app");
+createApp(App).use(router).use(i18n).use(vuetifyApp).mount("#app");

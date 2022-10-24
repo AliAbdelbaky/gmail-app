@@ -1,22 +1,18 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-
-let count = ref(1)
-</script>
-
 <template>
-  <main>
-    <h1>
-      Hello from Homepage
-    </h1>
-  </main>
+  <h1>
+    homepage page
+  </h1>
 </template>
-<style>
-@media (min-width: 1024px) {
-  main {
-    min-height: 100vh;
-    display: flex;
-    place-items: center;
-  }
-}
-</style>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+
+// Components
+
+export default defineComponent({
+  name: "HomeView",
+
+  components: {
+  },
+});
+</script>
